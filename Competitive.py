@@ -115,3 +115,39 @@ else:
         else:
             print("Smallest number :",n4)
     
+# Perfect square or not
+n=int(input("Enter a number cheak perfect square :"))
+i=1
+while i:
+    s=i*i
+    if s==n:
+        print("Success",i)
+        break
+    if s>n:
+        print("Failure")
+        break
+    i+=1
+    
+# Sum of digit
+n=int(input("Enter a number cheak perfect square :"))
+sum=0
+while n:
+    sum+=n%10
+    n//=10
+print("Sum of digit :",sum)
+
+# split number digit
+n=int(input("Enter a number cheak perfect square :"))
+sum=0
+k=1
+m=n
+while m:
+    k=k*10
+    m//=10
+print(k)
+k//=10
+while n:
+    sum=n//k
+    print(sum,end=" ")
+    n%=k
+    k//=10
