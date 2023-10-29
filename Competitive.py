@@ -151,3 +151,17 @@ while n:
     print(sum,end=" ")
     n%=k
     k//=10
+
+# print box 1 & 0 1111
+#                 1001
+#                 1111
+ n1=int(input("Enter  row :"))
+n2=int(input("Enter  colume :"))
+for i in range(1,n1+1):
+    for j in range(1,n2+1):
+        if(i!=1 and i!=5 and j!=1 and j!=5):
+            print("0",end="")
+        else:
+            print("1",end="")
+    print()
+    
