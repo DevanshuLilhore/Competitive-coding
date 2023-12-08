@@ -164,4 +164,13 @@ for i in range(1,n1+1):
         else:
             print("1",end="")
     print()
+
+# input 12334 
+# output 1 2 3 4
+n=int(input("Enter a number :"))
+l=[]
+while n:
+    l.append(n%10)
+    n//=10
+print(l[::-1],end=" ")
     
