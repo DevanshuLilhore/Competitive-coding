@@ -165,6 +165,19 @@ for i in range(1,n1+1):
             print("1",end="")
     print()
 
+# Next version print box 1 & 0 1111
+#                 1001
+#                 1111
+n=int(input("Enter a row :"))
+m=int(input("Enter a colum :"))
+for i in range(1,n+1):
+    for j in range(1,m+1):
+        if(i==1 or j==m or i==n or j==1):
+            print("1",end=" ")
+        else:
+            print("0",end=" ")
+    print()
+
 # input 12334 
 # output 1 2 3 4
 n=int(input("Enter a number :"))
