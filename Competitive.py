@@ -173,4 +173,16 @@ while n:
     l.append(n%10)
     n//=10
 print(l[::-1],end=" ")
+
+
+# input 12334 
+# output 1 2 3 4 useing loop
+def re(n):
+    if(n==0):
+        return
+    m=n%10
+    re(n//10)
+    print(m,end=" ")
     
+n=int(input("Enter a number :"))
+re(n)
