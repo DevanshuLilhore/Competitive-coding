@@ -199,3 +199,20 @@ def re(n):
     
 n=int(input("Enter a number :"))
 re(n)
+
+# pair find out in list 
+# input list = [12,3,4,4,3,5,5,6,22]
+# sum =7
+# output= 8 pair given sum :7
+l=[12,3,4,4,3,5,5,6,22]
+s=7
+c=0
+for i in range(0,len(l)):
+    for j in range(1,len(l)):
+        a=l[i]+l[j]
+        if s==a:
+            c+=1
+if c>0:
+    print(c,"pair given sum :",s)
+else:
+    print("No")
