@@ -238,4 +238,28 @@ for k in range(i,0,-1):
     for m in range(1,k):
         print(k,"*",end="")
     print(k,end="")
+
+# Armstrong number cheak
+n=int(input("Enter a number :"))
+m=n
+c=0
+while m:
+   m//=10
+   c+=1
+print("total digit :",c)
+m=n
+s=0
+while m:
+    t=c
+    a=1
+    k=m%10
+    while t:
+        a=a*k
+        t-=1
+    s=s+a
+    m//=10
+if s==n:
+    print("True")
+else:
+    print("False")
     print()
