@@ -263,3 +263,27 @@ if s==n:
 else:
     print("False")
     print()
+
+
+#
+l=[1,5,5,1,5,4,6,7,3]
+print(l)
+for i in range(0,len(l)):
+    for j in range(0,len(l)):
+        if l[i]>l[j]:
+            temp=l[j]
+            l[j]=l[i]
+            l[i]=temp
+print(l)
+c1=0
+n=int(input("Enter  a list number :"))
+for i in range(0,len(l)):
+    if n==l[i]:
+        c1+=1
+        c2=i
+f=c2-c1
+if f<0:
+    f*=-1
+f=f+1
+print("start ",f,"End ",c2)
+
