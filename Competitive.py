@@ -290,3 +290,20 @@ if c1==-1:
 else:
     print("start ",c1,"End ",c2)
 
+#input=12:30:24am
+#output=00:30:24am
+t4=str(input("Enter Time (AM/PM):"))
+t1=int(input("Enter Time (houre):"))
+t2=int(input("Enter Time (minute):"))
+t3=int(input("Enter Time (sec):"))
+print("Time :- ",t1,":",t2,":",t3,t4)
+if "am"==t4:
+    if 12==t1:
+        print("Time :-",t1-12,":",t2,":",t3)
+    else:
+        print("Time :- ",t1,":",t2,":",t3)
+else:
+    if 12==t1:
+        print("Time :-",t1,":",t2,":",t3)
+    else:
+        print("Time :- ",t1+12,":",t2,":",t3)
