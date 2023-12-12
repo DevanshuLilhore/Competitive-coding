@@ -264,8 +264,10 @@ else:
     print("False")
     print()
 
-
-#
+# list [1,5,5,1,5,4,6,7,3]
+# input =5
+#  Output index start=2
+# index end =4
 l=[1,5,5,1,5,4,6,7,3]
 print(l)
 for i in range(0,len(l)):
@@ -275,15 +277,16 @@ for i in range(0,len(l)):
             l[j]=l[i]
             l[i]=temp
 print(l)
-c1=0
+c1=-1
+c2=0
 n=int(input("Enter  a list number :"))
 for i in range(0,len(l)):
+    if n==l[i] and c1==-1:
+        c1=i    
     if n==l[i]:
-        c1+=1
         c2=i
-f=c2-c1
-if f<0:
-    f*=-1
-f=f+1
-print("start ",f,"End ",c2)
+if c1==-1:
+    print("No occurence")
+else:
+    print("start ",c1,"End ",c2)
 
