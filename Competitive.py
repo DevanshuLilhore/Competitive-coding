@@ -297,13 +297,17 @@ t1=int(input("Enter Time (houre):"))
 t2=int(input("Enter Time (minute):"))
 t3=int(input("Enter Time (sec):"))
 print("Time :- ",t1,":",t2,":",t3,t4)
-if "am"==t4:
-    if 12==t1:
-        print("Time :-",t1-12,":",t2,":",t3)
+if 12>=t1 and 60>=t2 and 60>=t3 and "am"==t4 or "pm"==t4:
+    if "am"==t4:
+        if 12==t1:
+            print("Time :-",t1-12,":",t2,":",t3)
+        else:
+            print("Time :- ",t1,":",t2,":",t3)
     else:
-        print("Time :- ",t1,":",t2,":",t3)
+        if 12==t1:
+            print("Time :-",t1,":",t2,":",t3)
+        else:
+            print("Time :- ",t1+12,":",t2,":",t3)
 else:
-    if 12==t1:
-        print("Time :-",t1,":",t2,":",t3)
-    else:
+    print("Please enter correct input")
         print("Time :- ",t1+12,":",t2,":",t3)
